@@ -26,9 +26,9 @@
   --font-title: 'Syne', sans-serif;
   --font-mono: 'Space Mono', monospace;
 }
-
+ 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
 body {
   background: var(--bg);
   color: var(--text);
@@ -36,7 +36,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
-
+ 
 /* BG GRID */
 body::before {
   content: '';
@@ -49,7 +49,7 @@ body::before {
   pointer-events: none;
   z-index: 0;
 }
-
+ 
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -57,7 +57,7 @@ body::before {
   position: relative;
   z-index: 1;
 }
-
+ 
 /* HEADER */
 .site-header {
   display: flex;
@@ -115,7 +115,7 @@ body::before {
   animation: blink 1.2s infinite;
 }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.2} }
-
+ 
 /* SECTION HEADER */
 .sec {
   margin: 40px 0 20px;
@@ -152,7 +152,7 @@ body::before {
   vertical-align: middle;
   letter-spacing: .05em;
 }
-
+ 
 /* MACRO */
 .macro-grid {
   display: grid;
@@ -181,7 +181,7 @@ body::before {
   line-height: 1; margin-bottom: 4px;
 }
 .mc-sub { font-size: 11px; color: var(--text2); }
-
+ 
 .macro-insight {
   background: var(--bg2);
   border: 1px solid var(--border);
@@ -194,7 +194,7 @@ body::before {
   margin-bottom: 12px;
 }
 .macro-insight b { color: var(--green-dim); font-weight: 600; }
-
+ 
 .mult-row {
   display: flex; align-items: center; gap: 12px;
   background: var(--bg2); border: 1px solid var(--border);
@@ -213,7 +213,7 @@ body::before {
 }
 .mult-zlabels { display: flex; justify-content: space-between; font-size: 9px; color: var(--text3); margin-top: 3px; font-family: var(--font-mono); }
 .mult-val { font-family: var(--font-mono); font-size: 14px; font-weight: 700; white-space: nowrap; }
-
+ 
 /* FILTERS */
 .filter-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
 .fb {
@@ -228,12 +228,12 @@ body::before {
 }
 .fb:hover { border-color: var(--border); color: var(--text); }
 .fb.on { background: var(--green); border-color: var(--green); color: #050A06; font-weight: 700; }
-
+ 
 /* PROGRESS */
 .prog-outer { height: 4px; background: var(--bg3); border-radius: 2px; overflow: hidden; margin-bottom: 8px; }
 .prog-inner { height: 100%; background: var(--green); border-radius: 2px; transition: width .3s; box-shadow: 0 0 8px var(--green); }
 .prog-label { font-family: var(--font-mono); font-size: 10px; color: var(--text2); margin-bottom: 20px; letter-spacing: .03em; }
-
+ 
 /* RANKING CARDS */
 .cards-grid {
   display: grid;
@@ -258,7 +258,7 @@ body::before {
   border-radius: 12px 12px 0 0;
 }
 .pcard.is-trap { border-color: rgba(226,75,74,0.4); }
-
+ 
 .card-hdr { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
 .tok-ico {
   width: 34px; height: 34px;
@@ -294,7 +294,7 @@ body::before {
 .chg-p { font-family: var(--font-mono); font-size: 10px; color: #1D9E75; }
 .chg-n { font-family: var(--font-mono); font-size: 10px; color: var(--red); }
 .cmeta { font-family: var(--font-mono); font-size: 9px; color: var(--text3); margin-bottom: 8px; line-height: 1.5; }
-
+ 
 .score-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
 .sring { position: relative; width: 40px; height: 40px; flex-shrink: 0; }
 .sring svg { position: absolute; top: 0; left: 0; transform: rotate(-90deg); }
@@ -305,21 +305,21 @@ body::before {
 .boost-buy { background: rgba(29,158,117,0.15); border: 1px solid rgba(29,158,117,0.3); color: #1D9E75; }
 .boost-sell { background: rgba(226,75,74,0.1); border: 1px solid rgba(226,75,74,0.3); color: var(--red); }
 .boost-neu { background: rgba(239,159,39,0.1); border: 1px solid rgba(239,159,39,0.3); color: var(--orange); }
-
+ 
 .crit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; margin-bottom: 8px; }
 .ci { display: flex; align-items: center; gap: 4px; font-size: 9px; color: var(--text2); font-family: var(--font-mono); }
 .cdot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
 .dot-on { background: var(--green); box-shadow: 0 0 4px rgba(0,230,118,0.5); }
 .dot-mid { background: var(--orange); }
 .dot-off { background: var(--bg3); border: 1px solid var(--border2); }
-
+ 
 .card-insight {
   font-size: 10px; color: var(--text2);
   border-top: 1px solid var(--border2);
   padding-top: 8px; line-height: 1.5;
 }
 .card-insight em { color: var(--green-dim); font-style: normal; font-weight: 600; }
-
+ 
 .empty-state {
   text-align: center; padding: 3rem;
   color: var(--text2); font-size: 13px;
@@ -328,7 +328,7 @@ body::before {
   line-height: 1.8;
 }
 .empty-state strong { color: var(--green); }
-
+ 
 .skeleton {
   background: linear-gradient(90deg, var(--bg3) 25%, rgba(255,255,255,0.04) 50%, var(--bg3) 75%);
   background-size: 200% 100%;
@@ -336,7 +336,7 @@ body::before {
   border-radius: 6px;
 }
 @keyframes shimmer { 0%{background-position:200%} 100%{background-position:-200%} }
-
+ 
 /* TRAMPAS */
 .trap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .trap-detail-card {
@@ -400,7 +400,7 @@ body::before {
 .trap-text b { color: var(--text); font-weight: 600; }
 .trap-empty { font-family: var(--font-mono); font-size: 10px; color: var(--text3); padding: 4px 0; }
 .trap-loading { font-family: var(--font-mono); font-size: 10px; color: var(--text3); text-align: center; padding: 1.5rem; }
-
+ 
 /* RESERVA */
 .reserve-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .reserve-card {
@@ -428,7 +428,7 @@ body::before {
   color: var(--text3); margin: 4px 0 10px; line-height: 1.6;
 }
 .res-desc { font-size: 11px; color: var(--text2); line-height: 1.6; }
-
+ 
 /* PORTFOLIO */
 .pf-tabs { display: flex; gap: 6px; margin-bottom: 12px; }
 .pf-tab {
@@ -447,7 +447,7 @@ body::before {
   color: var(--text); font-weight: 700;
 }
 .pf-desc { font-size: 12px; color: var(--text2); margin-bottom: 14px; line-height: 1.6; }
-
+ 
 .slider-row { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
 .slider-lbl { font-family: var(--font-mono); font-size: 11px; color: var(--text2); white-space: nowrap; }
 .pf-slider {
@@ -461,7 +461,7 @@ body::before {
   box-shadow: 0 0 6px rgba(0,230,118,0.5);
 }
 .slider-val { font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: var(--green); min-width: 20px; }
-
+ 
 .pf-row {
   display: flex; align-items: center; gap: 10px;
   margin-bottom: 6px; padding: 9px 12px;
@@ -483,7 +483,7 @@ body::before {
 .pf-bar { height: 100%; border-radius: 2px; }
 .pf-pct { font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: var(--text); min-width: 32px; text-align: right; }
 .pf-empty { font-family: var(--font-mono); font-size: 11px; color: var(--text2); padding: 1rem; text-align: center; }
-
+ 
 /* FOOTER */
 .footer {
   margin-top: 60px;
@@ -493,7 +493,7 @@ body::before {
 }
 .footer-logo { font-family: var(--font-mono); font-size: 11px; color: var(--text3); letter-spacing: .08em; }
 .footer-disclaimer { font-size: 10px; color: var(--text3); max-width: 500px; text-align: right; line-height: 1.5; }
-
+ 
 @media (max-width: 700px) {
   .macro-grid { grid-template-columns: 1fr 1fr; }
   .trap-grid { grid-template-columns: 1fr; }
@@ -510,7 +510,7 @@ body::before {
 </head>
 <body>
 <div class="container">
-
+ 
 <!-- HEADER -->
 <header class="site-header">
   <div class="logo">
@@ -525,7 +525,7 @@ body::before {
     EVALUAR UNIVERSO
   </button>
 </header>
-
+ 
 <!-- MACRO -->
 <div>
   <div style="font-size:13px;color:var(--text2);margin-bottom:14px;line-height:1.6;">
@@ -554,7 +554,7 @@ body::before {
     <span class="mult-val" id="multVal" style="color:#1D9E75">x1.15</span>
   </div>
 </div>
-
+ 
 <!-- RANKING -->
 <div class="sec">
   <div class="sec-label">// 01 · Ranking</div>
@@ -572,14 +572,14 @@ body::before {
     detecte trampas y construya tu portfolio automáticamente —
   </div>
 </div>
-
+ 
 <!-- TRAMPAS -->
 <div class="sec">
   <div class="sec-label">// 02 · Trampas</div>
   <div class="sec-title">Trampas de valor — qué evitar</div>
   <div class="sec-sub">La IA escanea el top 200 por market cap, identifica proyectos que <em style="color:var(--text);font-style:normal;font-weight:600">parecen buenos a simple vista</em> pero tienen una falla estructural escondida — y explica exactamente por qué son peligrosos.</div>
 </div>
-
+ 
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap">
   <button class="run-btn" id="trapBtn" onclick="runTrapScan()" style="font-size:11px;padding:7px 14px">
     <div class="pulse" id="trapPulse"></div> ESCANEAR TOP 200
@@ -588,12 +588,12 @@ body::before {
     Independiente del ranking — puedes ejecutarlo en cualquier momento
   </span>
 </div>
-
+ 
 <div id="trapProgressWrap" style="display:none;margin-bottom:16px">
   <div class="prog-outer"><div class="prog-inner" id="trapProgressBar" style="width:0%"></div></div>
   <div class="prog-label" id="trapProgressLabel">Iniciando escaneo...</div>
 </div>
-
+ 
 <div id="trapGrid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
   <div class="trap-card" style="grid-column:1/-1">
     <div class="trap-loading" style="padding:1.5rem;text-align:center">
@@ -601,7 +601,7 @@ body::before {
     </div>
   </div>
 </div>
-
+ 
 <!-- RESERVA -->
 <div class="sec">
   <div class="sec-label">// 03 · Reserva</div>
@@ -634,7 +634,7 @@ body::before {
     <div class="res-desc">La capa donde viven la mayoría de los tokens del scanner y la narrativa RWA. Blue-chip con ETF y staking. Estabiliza el portfolio junto a BTC.</div>
   </div>
 </div>
-
+ 
 <!-- PORTFOLIO -->
 <div class="sec">
   <div class="sec-label">// 04 · Portfolio</div>
@@ -652,19 +652,19 @@ body::before {
   <span class="slider-val" id="sliderVal">8</span>
 </div>
 <div id="pfList"><div class="pf-empty">El portfolio aparecerá aquí luego de evaluar el universo.</div></div>
-
+ 
 <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-logo">RISE UP TRADING HUB © 2025</div>
   <div class="footer-disclaimer">Este dashboard es una herramienta educativa. No constituye asesoramiento financiero. Siempre haz tu propia investigación antes de invertir.</div>
 </footer>
-
+ 
 </div><!-- /container -->
-
+ 
 <script>
 // ⚙️ CONFIGURACIÓN — reemplaza con tu URL de Railway después de desplegar el proxy
-const PROXY_URL = 'https://rise-up-proxy-production-351e.up.railway.app';
-
+const PROXY_URL = 'https://rise-up-proxy-production.up.railway.app';
+ 
 const UNIVERSE = [
   // ── IA descentralizada ──
   {ticker:'TAO', name:'Bittensor',   full:'Bittensor',           cat:'IA descentralizada',    price:420.00, change:1.8,  mcap:'3.4B',  ath:738.00, athPct:43, color:'#0F6E56', tcolor:'#9FE1CB'},
@@ -700,13 +700,13 @@ const UNIVERSE = [
   // ── Pagos & Finanzas ──
   {ticker:'XLM', name:'Stellar',     full:'Stellar',             cat:'Pagos & Finanzas',      price:0.28,   change:0.5,  mcap:'8.5B',  ath:0.938,  athPct:70, color:'#0A0A0A', tcolor:'#BBBBBB'},
 ];
-
+ 
 const WEIGHTS = {narrativa:20,descuento:[0,6,11,17],oferta:15,crecimiento:[0,5,10,15],flujo:12,demanda:10,rentable:10,catalizador:[0,2,4,6]};
 const CRIT_LABELS = {narrativa:'Narrativa',descuento:'Desc. ATH',oferta:'Sin dilución',crecimiento:'Crecimiento',flujo:'Flujo real',demanda:'Demanda ext.',rentable:'Rentable',catalizador:'Catalizador'};
-
+ 
 let macroMultiplier=1.15, macroZone='buy', activeFilter='Todas';
 let evaluatedProjects=[], isRunning=false, pfTab='balanceado', pfMaxTokens=8;
-
+ 
 function G(id){return document.getElementById(id);}
 function scColor(s){return s>=80?'#00A854':s>=60?'#BA7517':'#4A6A4B';}
 function scTag(s){return s>=80?'TOP':s>=60?'FUERTE':'DÉBIL';}
@@ -723,7 +723,7 @@ function calcScore(c,mult){
   b+=WEIGHTS.catalizador[Math.min(3,c.catalizador||0)];
   return Math.min(100,Math.round(b*mult));
 }
-
+ 
 async function loadMacro(){
   try{
     const [r1,r2]=await Promise.all([fetch('https://api.alternative.me/fng/?limit=1'),fetch('https://api.coingecko.com/api/v3/global')]);
@@ -738,7 +738,7 @@ async function loadMacro(){
     return{mvrz:0.64,dom:'62.0',fg:42};
   }
 }
-
+ 
 function setMacroUI(mvrz,dom,fg,fgClass){
   const mvc=mvrz<1?'#1D9E75':mvrz<2.5?'#EF9F27':'#E24B4A';
   G('mv-val').textContent=mvrz.toFixed(2);G('mv-val').style.color=mvc;
@@ -757,7 +757,7 @@ function setMacroUI(mvrz,dom,fg,fgClass){
   const ins=mvrz<1&&fg<50?'<b>Mercado barato.</b> El termómetro marca mercado cripto barato mientras las acciones cotizan en extremos. Es momento de acumular infraestructura de calidad subvaluada — soltá cuando el MVRV-Z se acerque a 3.7.':mvrz>3?'<b>Mercado caro.</b> Multiplicador de precaución x0.85 activo. Solo fundamentals excepcionales superan el umbral TOP.':'<b>Zona intermedia.</b> Multiplicador neutral activo. Priorizar proyectos con score alto y catalizador confirmado próximo.';
   G('macroInsight').innerHTML=ins;
 }
-
+ 
 async function loadReserve(){
   try{
     const r=await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd&include_24hr_change=true&include_market_cap=true');
@@ -772,22 +772,22 @@ async function loadReserve(){
     G('eth-meta').textContent='Mcap $'+(em/1e9).toFixed(0)+'B · ATH $4,878 · '+Math.round((1-ep/4878)*100)+'% bajo ATH';
   }catch(e){}
 }
-
+ 
 async function evalProject(p,ctx){
   const prompt=`Eres analista cuantitativo cripto de Rise Up Trading Hub. Evalúa ${p.name} (${p.ticker}).
-
+ 
 Contexto macro: MVRV-Z ${ctx.mvrz}, Dom BTC ${ctx.dom}%, Fear&Greed ${ctx.fg}, precio $${p.price}, ${p.athPct}% bajo ATH de $${p.ath}.
-
+ 
 Responde SOLO JSON válido sin texto extra ni backticks:
 {"narrativa":bool,"descuento":1|2|3,"oferta":bool,"crecimiento":1|2|3,"flujo":bool,"demanda":bool,"rentable":bool,"catalizador":0|1|2|3,"insight":"frase corta tesis ${p.ticker}","trampa":bool,"trampa_tipo":"DILUCIÓN MORTAL|CAPTURA DE VALOR NULA|HYPE ENFRIADO|TRAMPA DE TIMING|null","trampa_razon":"frase corta del riesgo estructural o null"}
-
+ 
 Criterios: narrativa=sector con momentum hoy; descuento=1(30-60%),2(60-85%),3(+85% bajo ATH); oferta=supply fijo/deflacionario sin vesting dañino; crecimiento=1lento,2medio,3fuerte; flujo=fees reales no solo emisión; demanda=adopción institucional/B2B real; rentable=protocolo operativamente rentable; catalizador=0ninguno,1posible,2confirmado<90d,3inminente<30d; trampa=true si hay riesgo estructural serio (unlock masivo, dilución, captura nula, hype sin revenue, parabólico); trampa_tipo=categoría exacta si trampa es true, null si false; trampa_razon=explicación breve del riesgo si trampa true, null si false.`;
   const r=await fetch(PROXY_URL+'/api/claude',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:[{role:'user',content:prompt}],max_tokens:500})});
   const d=await r.json();
   const text=d.content.filter(b=>b.type==='text').map(b=>b.text).join('');
   return JSON.parse(text.replace(/```json|```/g,'').trim());
 }
-
+ 
 function renderSkeletons(){
   G('cardsGrid').innerHTML=UNIVERSE.map(p=>`
     <div class="pcard" id="card-${p.ticker}">
@@ -803,7 +803,7 @@ function renderSkeletons(){
       <div style="height:95px;margin-top:8px" class="skeleton"></div>
     </div>`).join('');
 }
-
+ 
 function updateCard(p,c,sc){
   const el=document.getElementById('card-'+p.ticker);
   if(!el)return;
@@ -847,9 +847,9 @@ function updateCard(p,c,sc){
     <div class="card-insight"><em>IA:</em> ${c.insight||'—'}</div>`;
   el.onclick=()=>alert('Análisis ' + p.name + ' (' + p.ticker + ') · Score: ' + sc + '/100\n\nInsight: ' + (c.insight||'—') + '\n\n' + (c.trampa?'⚠ TRAMPA DETECTADA: ' + (c.trampa_razon||'') + '\n\n':'') + 'Para análisis completo consulta con tu mentor en Rise Up Trading Hub.');
 }
-
+ 
 // ── TRAP SCANNER — motor de dos pasos ──────────────────────────────────────
-
+ 
 async function callClaude(prompt, max_tokens=800) {
   const r = await fetch(PROXY_URL+'/api/claude', {
     method:'POST',
@@ -860,7 +860,7 @@ async function callClaude(prompt, max_tokens=800) {
   const text = d.content.filter(b=>b.type==='text').map(b=>b.text).join('');
   return text.replace(/```json|```/g,'').trim();
 }
-
+ 
 async function runTrapScan() {
   const btn = G('trapBtn');
   if (btn.disabled) return;
@@ -871,50 +871,50 @@ async function runTrapScan() {
   G('trapProgressBar').style.width = '10%';
   G('trapProgressLabel').textContent = 'La IA analiza el top 200 por market cap...';
   G('trapGrid').innerHTML = '<div class="trap-detail-card" style="grid-column:1/-1"><div class="trap-loading">🔍 La IA está revisando el top 200 en busca de trampas escondidas...</div></div>';
-
+ 
   try {
     // PASO 1 — pedir lista de sospechosos
     const step1prompt = `Eres el motor de detección de trampas de Rise Up Trading Hub. 
-
+ 
 Analiza el top 200 de criptomonedas por market cap (junio 2025) e identifica exactamente 10 proyectos que:
 1. Son ampliamente conocidos y PARECEN buenos a simple vista (buena narrativa, mcap alto, comunidad activa)
 2. Pero tienen una falla estructural ESCONDIDA que los convierte en trampa de valor
-
+ 
 Criterios de trampa: dilución masiva pendiente (unlocks, inflación de supply), captura de valor nula (el token no captura el éxito del protocolo), hype sin revenue real, timing parabólico (ya corrieron demasiado), narrativa copiada sin diferenciación real, dependencia de un solo catalizador que puede no llegar, tokenomics diseñados para insiders.
-
+ 
 Responde SOLO JSON sin texto extra:
 {
   "sospechosos": [
     {"ticker":"XXX","name":"Nombre","mcap_rank":N,"por_que_parece_bueno":"frase corta","señal_alerta":"frase corta del riesgo"}
   ]
 }
-
+ 
 Incluye exactamente 10 proyectos. Prioriza proyectos entre top 20 y top 150 que engañen más fácilmente a inversores no expertos.`;
-
+ 
     const step1raw = await callClaude(step1prompt, 1200);
     const step1data = JSON.parse(step1raw);
     const sospechosos = step1data.sospechosos || [];
-
+ 
     G('trapProgressBar').style.width = '25%';
     G('trapProgressLabel').textContent = `${sospechosos.length} sospechosos identificados — analizando cada uno en detalle...`;
     G('trapStatus').textContent = `Paso 2/2 — Analizando ${sospechosos.length} sospechosos en profundidad...`;
-
+ 
     const resultados = [];
-
+ 
     for (let i = 0; i < sospechosos.length; i++) {
       const s = sospechosos[i];
       const pct = 25 + Math.round((i / sospechosos.length) * 70);
       G('trapProgressBar').style.width = pct + '%';
       G('trapProgressLabel').textContent = `Analizando ${s.name} (${i+1}/${sospechosos.length})...`;
-
+ 
       try {
         const step2prompt = `Eres el motor de detección de trampas de Rise Up Trading Hub.
-
+ 
 Analiza en profundidad ${s.name} (${s.ticker}), ranking #${s.mcap_rank} por market cap.
-
+ 
 Este proyecto PARECE bueno porque: ${s.por_que_parece_bueno}
 Señal de alerta inicial: ${s.señal_alerta}
-
+ 
 Haz un análisis profundo y responde SOLO JSON sin texto extra:
 {
   "ticker": "${s.ticker}",
@@ -926,7 +926,7 @@ Haz un análisis profundo y responde SOLO JSON sin texto extra:
   "por_que_es_trampa": "2-3 frases — la falla estructural real y concreta, con datos si es posible",
   "veredicto": "una frase directa tipo Rise Up sobre qué hacer con este proyecto"
 }`;
-
+ 
         const step2raw = await callClaude(step2prompt, 600);
         const analysis = JSON.parse(step2raw);
         resultados.push(analysis);
@@ -943,21 +943,21 @@ Haz un análisis profundo y responde SOLO JSON sin texto extra:
         renderTrapCards(resultados);
       }
     }
-
+ 
     G('trapProgressBar').style.width = '100%';
     G('trapProgressLabel').textContent = `✓ ${resultados.length} trampas identificadas y analizadas en el top 200`;
     G('trapStatus').textContent = `Último escaneo: ${new Date().toLocaleTimeString('es-MX')} · ${resultados.length} trampas activas detectadas`;
     setTimeout(() => { G('trapProgressWrap').style.display = 'none'; }, 3000);
-
+ 
   } catch(e) {
     G('trapGrid').innerHTML = '<div class="trap-detail-card" style="grid-column:1/-1"><div class="trap-loading">Error conectando con el proxy. Verifica que Railway esté activo.</div></div>';
     G('trapStatus').textContent = 'Error — verifica la conexión con el proxy';
   }
-
+ 
   btn.disabled = false;
   btn.innerHTML = '<div class="pulse"></div> RE-ESCANEAR';
 }
-
+ 
 function renderTrapCards(resultados) {
   const sorted = [...resultados].sort((a,b) => (b.peligro||0) - (a.peligro||0));
   G('trapGrid').innerHTML = sorted.map(t => {
@@ -989,13 +989,13 @@ function renderTrapCards(resultados) {
     </div>`;
   }).join('');
 }
-
+ 
 // Mantener compatibilidad con el ranking (trampas del universo propio)
 function buildTraps(projects) {
   // El ranking sigue marcando con borde rojo sus propias trampas
   // La sección de trampas principal ahora es independiente (runTrapScan)
 }
-
+ 
 function buildPf(){
   if(!evaluatedProjects.length){G('pfList').innerHTML='<div class="pf-empty">Evalúa el universo primero.</div>';return;}
   const isAgr=pfTab==='agresivo';
@@ -1035,7 +1035,7 @@ function buildPf(){
   G('sliderRow').style.display='flex';
   G('sliderVal').textContent=pfMaxTokens;
 }
-
+ 
 function setPfTab(tab,btn){
   pfTab=tab;
   document.querySelectorAll('.pf-tab').forEach(b=>b.classList.remove('on'));
@@ -1043,7 +1043,7 @@ function setPfTab(tab,btn){
   buildPf();
 }
 function onSlider(el){pfMaxTokens=parseInt(el.value);G('sliderVal').textContent=pfMaxTokens;buildPf();}
-
+ 
 function buildFilters(){
   const cats=['Todas',...[...new Set(UNIVERSE.map(p=>p.cat))]];
   G('filterRow').innerHTML=cats.map(c=>{
@@ -1064,19 +1064,19 @@ function reorder(){
     if(card){grid.appendChild(card);const r=document.getElementById('rank-'+p.ticker);if(r)r.textContent='#'+(i+1);}
   });
 }
-
+ 
 async function startEvaluation(){
   if(isRunning)return;
   isRunning=true;evaluatedProjects=[];
   const btn=G('runBtn');btn.disabled=true;
   btn.innerHTML='<div class="pulse"></div> EVALUANDO...';
   // Trampas son independientes del ranking — no resetear
-
+ 
   const ctx=await loadMacro();
   await loadReserve();
   buildFilters();renderSkeletons();
   G('progressWrap').style.display='block';
-
+ 
   for(let i=0;i<UNIVERSE.length;i++){
     const p=UNIVERSE[i];
     G('progressBar').style.width=Math.round(i/UNIVERSE.length*100)+'%';
@@ -1093,7 +1093,7 @@ async function startEvaluation(){
       updateCard(p,fb,sc);reorder();
     }
   }
-
+ 
   G('progressBar').style.width='100%';
   G('progressLabel').textContent='✓ '+UNIVERSE.length+' proyectos evaluados · Ranking, trampas y portfolio listos';
   setTimeout(()=>{G('progressWrap').style.display='none';},3000);
@@ -1102,10 +1102,11 @@ async function startEvaluation(){
   btn.innerHTML='<div class="pulse"></div> RE-EVALUAR';
   isRunning=false;
 }
-
+ 
 // Cargar datos al inicio
 loadMacro();
 loadReserve();
 </script>
 </body>
 </html>
+ 
